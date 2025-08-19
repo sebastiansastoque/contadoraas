@@ -1,4 +1,8 @@
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Gracias por tu mensaje. Te responderé pronto.");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
 });
